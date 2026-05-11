@@ -24,8 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateToggleIcons(isDark) {
-        const icons = document.querySelectorAll('#theme-toggle i, .theme-toggle-btn i');
-        icons.forEach(icon => {
+        const navIcons = document.querySelectorAll('#theme-toggle i');
+        const mobileIcons = document.querySelectorAll('.theme-toggle-btn i');
+        
+        navIcons.forEach(icon => {
+            icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+        });
+        
+        mobileIcons.forEach(icon => {
             icon.className = isDark ? 'fas fa-sun me-2' : 'fas fa-moon me-2';
         });
     }

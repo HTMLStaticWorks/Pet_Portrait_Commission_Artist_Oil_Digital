@@ -93,7 +93,15 @@
             <a href="index.html" class="logo"><i class="fas fa-paw me-2 text-primary"></i>Pawtrait.</a>
 
             <nav class="nav-links">
-                <a href="index.html" class="d-xl-none">Home 1</a><a href="home-2.html" class="d-xl-none">Home 2</a><div class="dropdown d-none d-xl-block"><a href="index.html">Home <i class="fas fa-chevron-down small ms-1"></i></a><div class="dropdown-menu"><a class="dropdown-item" href="index.html">Home 1</a><a class="dropdown-item" href="home-2.html">Home 2</a></div></div>
+                <div class="dropdown d-none d-lg-block">
+                    <a href="index.html">Home <i class="fas fa-chevron-down small ms-1"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html">Home 1</a>
+                        <a class="dropdown-item" href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+                <a href="index.html" class="d-lg-none">Home 1</a>
+                <a href="home-2.html" class="d-lg-none">Home 2</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="gallery.html">Gallery</a>
@@ -102,7 +110,7 @@
                 <a href="contact.html">Contact</a>
 
                 <!-- Mobile Only Toggles -->
-                <div class="mobile-toggles d-xl-none">
+                <div class="mobile-toggles">
                     <button class="theme-toggle-btn toggle-btn">
                         <i class="fas fa-moon me-2"></i> Dark Mode
                     </button>
@@ -114,14 +122,12 @@
             </nav>
 
             <div class="nav-toggles">
-                <button id="theme-toggle" class="toggle-btn d-none d-xl-inline-block" title="Toggle Dark Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button id="rtl-toggle" class="toggle-btn d-none d-xl-inline-block" title="Toggle RTL">
-                    <i class="fas fa-arrows-left-right"></i>
-                </button>
-                <a href="login.html" class="btn-pawtrait btn-primary d-none d-xl-inline-block">Signup</a>
-                <button class="menu-toggle d-xl-none">
+                <button id="theme-toggle" class="toggle-btn desktop-only-toggle" title="Toggle Dark Mode"><i
+                        class="fas fa-moon"></i></button>
+                <button id="rtl-toggle" class="toggle-btn desktop-only-toggle" title="Toggle RTL"><i
+                        class="fas fa-arrows-left-right"></i></button>
+                <a href="login.html" class="btn-pawtrait btn-primary desktop-only-toggle">Signup</a>
+                <button class="menu-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -324,10 +330,10 @@
                 <div class="col-lg-3">
                     <h5 class="mb-4 fw-bold">Services</h5>
                     <ul class="p-0 opacity-75">
-                        <li class="mb-2">Oil Portraits</li>
-                        <li class="mb-2">Digital Illustrations</li>
-                        <li class="mb-2">Rush Commissions</li>
-                        <li class="mb-2">Gift Cards</li>
+                        <li class="mb-2"><a href="services.html">Oil Portraits</a></li>
+                        <li class="mb-2"><a href="service-details.html">Digital Illustrations</a></li>
+                        <li class="mb-2"><a href="contact.html">Rush Commissions</a></li>
+                        <li class="mb-2"><a href="pricing.html">Gift Cards</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">

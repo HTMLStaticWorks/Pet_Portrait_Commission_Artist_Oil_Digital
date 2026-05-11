@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Elena Vasquez Studio - Commission Rates</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <style>
+        .page-header {
+            padding: 160px 0 80px;
+            background: var(--primary-color);
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #FFFFFF;
+        }
+
+        .page-header p {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        .pricing-table th {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .pricing-table td {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pkg-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            padding: 50px 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pkg-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .pkg-card.popular {
+            border: 2px solid var(--primary-color);
+            position: relative;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .addon-item {
+            padding: 15px;
+            background: var(--bg-light);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .payment-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 32px;
+            color: var(--secondary-color);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-paw me-2 text-primary"></i>Pawtrait.</a>
+            <nav class="nav-links d-none d-lg-flex">
+                <a href="index.html" class="d-xl-none">Home 1</a><a href="home-2.html" class="d-xl-none">Home 2</a><div class="dropdown d-none d-xl-block"><a href="index.html">Home <i class="fas fa-chevron-down small ms-1"></i></a><div class="dropdown-menu"><a class="dropdown-item" href="index.html">Home 1</a><a class="dropdown-item" href="home-2.html">Home 2</a></div></div>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-toggles">
+                <button id="theme-toggle" class="toggle-btn" title="Toggle Dark Mode"><i
+                        class="fas fa-moon"></i></button>
+                <button id="rtl-toggle" class="toggle-btn" title="Toggle RTL"><i
+                        class="fas fa-arrows-left-right"></i></button>
+                <a href="login.html" class="btn-pawtrait btn-primary d-none d-md-inline-block">Signup</a>
+                <button class="menu-toggle d-lg-none toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-3 mb-3">Investment Guide</h1>
+            <p class="lead">Transparent pricing for every medium and size. Select the perfect fit for your home.</p>
+        </div>
+    </section>
+
+    <!-- Package Tiers -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Basic -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="pkg-card">
+                        <h4 class="mb-3">Digital Basic</h4>
+                        <div class="h2 mb-4 text-primary">$85</div>
+                        <ul class="list-unstyled mb-5 text-start opacity-75">
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> 8x10 High-Res File</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> Solid Background</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> 2 Revision Rounds</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> 7-Day Turnaround</li>
+                        </ul>
+                        <a href="contact.html" class="btn-pawtrait btn-outline w-100">Choose Basic</a>
+                    </div>
+                </div>
+                <!-- Standard -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pkg-card popular">
+                        <span class="popular-badge">MOST POPULAR</span>
+                        <h4 class="mb-3">Oil Masterpiece</h4>
+                        <div class="h2 mb-4 text-primary">$260</div>
+                        <ul class="list-unstyled mb-5 text-start opacity-75">
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> 11x14 Hand-Painted Oil</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> Textured Canvas</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> Worldwide Shipping</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> Varnish Finish</li>
+                        </ul>
+                        <a href="contact.html" class="btn-pawtrait btn-primary w-100">Choose Standard</a>
+                    </div>
+                </div>
+                <!-- Premium -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pkg-card">
+                        <h4 class="mb-3">Elite Multi-Pet</h4>
+                        <div class="h2 mb-4 text-primary">$450</div>
+                        <ul class="list-unstyled mb-5 text-start opacity-75">
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> 16x20 Oil or Digital</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> Up to 3 Pets</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> Custom Detailed Background
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i> Priority Scheduling</li>
+                        </ul>
+                        <a href="contact.html" class="btn-pawtrait btn-outline w-100">Choose Premium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Matrix -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">Full Pricing Matrix</h2>
+            </div>
+            <div class="table-responsive" data-aos="zoom-in">
+                <table class="table pricing-table bg-white border">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Size</th>
+                            <th>Digital Standard</th>
+                            <th>Digital Detailed</th>
+                            <th>Oil Painting</th>
+                            <th>Rush Add-on</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">8 x 10</td>
+                            <td>$85</td>
+                            <td>$110</td>
+                            <td>$180</td>
+                            <td>+$40</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">11 x 14</td>
+                            <td>$120</td>
+                            <td>$150</td>
+                            <td>$260</td>
+                            <td>+$60</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">16 x 20</td>
+                            <td>$185</td>
+                            <td>$230</td>
+                            <td>$340</td>
+                            <td>+$80</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">18 x 24</td>
+                            <td>$240</td>
+                            <td>$300</td>
+                            <td>$450</td>
+                            <td>+$100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons & Policy -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3 class="mb-4">Available Add-ons</h3>
+                    <div class="addon-item d-flex justify-content-between align-items-center">
+                        <span>Extra Pet (per pet)</span>
+                        <span class="fw-bold text-primary">+$40</span>
+                    </div>
+                    <div class="addon-item d-flex justify-content-between align-items-center">
+                        <span>Custom Complex Background</span>
+                        <span class="fw-bold text-primary">+$50</span>
+                    </div>
+                    <div class="addon-item d-flex justify-content-between align-items-center">
+                        <span>Professional Framing (Oil)</span>
+                        <span class="fw-bold text-primary">+$80</span>
+                    </div>
+                    <div class="addon-item d-flex justify-content-between align-items-center">
+                        <span>Physical Print (Digital)</span>
+                        <span class="fw-bold text-primary">+$35</span>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="p-5 border rounded bg-light">
+                        <h4 class="mb-3">Revision Policy</h4>
+                        <p class="text-muted small mb-4">I want you to love your portrait. For digital commissions, I
+                            offer unlimited minor revisions during the sketching phase. For oil paintings, revisions are
+                            limited to the initial sketch and underpainting phase due to the nature of the medium.</p>
+                        <hr>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-stripe" title="Stripe"></i>
+                            <i class="fab fa-cc-paypal" title="PayPal"></i>
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Cards -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 mb-4">The Perfect Gift</h2>
+                    <p class="lead mb-4">Can't choose the perfect photo? A Pawtrait Gift Card lets your loved ones work
+                        directly with the artist to capture their companion's spirit.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Instant digital delivery</li>
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Valid for 2 years</li>
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Applicable to any medium or size
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn-pawtrait btn-primary">Purchase a Gift Card</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="portrait-frame">
+                        <img src="assets/images/gift-card.jpg" alt="Gift Card Concept" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="logo mb-4"><i class="fas fa-paw me-2 text-primary"></i>Pawtrait.</a>
+                    <p class="text-muted opacity-75">Premium pet portraits by Elena Vasquez. Capturing the spirit of
+                        your companions since 2018.</p>
+                    <div class="d-flex gap-3 fs-5 mt-4 social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4 fw-bold">Quick Links</h5>
+                    <ul class="p-0 opacity-75">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4 fw-bold">Services</h5>
+                    <ul class="p-0 opacity-75">
+                        <li class="mb-2">Oil Portraits</li>
+                        <li class="mb-2">Digital Illustrations</li>
+                        <li class="mb-2">Rush Commissions</li>
+                        <li class="mb-2">Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4 fw-bold">Newsletter</h5>
+                    <p class="text-muted opacity-75 mb-3">Get tips on pet photography and exclusive discounts.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control bg-transparent border-secondary"
+                            placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-50 copyright-bar">
+                <p class="mb-0">&copy; 2026 Pawtrait Elena Vasquez Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+

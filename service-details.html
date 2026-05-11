@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Portrait Details | Elena Vasquez Studio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background: var(--bg-light);
+        }
+        .detail-img {
+            border-radius: 10px;
+            width: 100%;
+        }
+        .process-step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .step-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+        .photo-req-box {
+            background: #FFF9F0;
+            border: 2px dashed #D4AF37;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        body.dark-mode .photo-req-box {
+            background: #1A1A1A;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-paw me-2 text-primary"></i>Pawtrait.</a>
+            <nav class="nav-links d-none d-lg-flex">
+                <a href="index.html" class="d-xl-none">Home 1</a><a href="home-2.html" class="d-xl-none">Home 2</a><div class="dropdown d-none d-xl-block"><a href="index.html">Home <i class="fas fa-chevron-down small ms-1"></i></a><div class="dropdown-menu"><a class="dropdown-item" href="index.html">Home 1</a><a class="dropdown-item" href="home-2.html">Home 2</a></div></div>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-toggles">
+                <button id="theme-toggle" class="toggle-btn" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+                <button id="rtl-toggle" class="toggle-btn" title="Toggle RTL"><i class="fas fa-arrows-left-right"></i></button>
+                <a href="login.html" class="btn-pawtrait btn-primary d-none d-md-inline-block">Signup</a>
+                <button class="menu-toggle d-lg-none toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Oil Portrait</li>
+                </ol>
+            </nav>
+            <h1 class="display-4">Traditional Oil Portrait</h1>
+        </div>
+    </section>
+
+    <!-- Detail Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=2070&auto=format&fit=crop" class="detail-img mb-5" alt="Oil Portrait Detail">
+                    
+                    <h2 class="mb-4">The Timeless Beauty of Oil</h2>
+                    <p class="mb-4">My traditional oil portraits are created using the finest artist-grade materials. Each piece begins with a custom-toned canvas and layers of carefully applied oil paint to create depth, luminosity, and life.</p>
+                    <p class="mb-5">This medium is perfect for those looking for a centerpiece that will become a family heirloom. The rich texture and vibrant colors of oil paint offer a presence that no other medium can match.</p>
+
+                    <h3 class="mb-4">The Process</h3>
+                    <div class="process-step" data-aos="fade-up">
+                        <div class="step-icon">1</div>
+                        <div>
+                            <h5>Consultation & Photo Review</h5>
+                            <p class="text-muted">We discuss your vision, background preferences, and select the perfect reference photo.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-icon">2</div>
+                        <div>
+                            <h5>Sketch & Underpainting</h5>
+                            <p class="text-muted">I map out the composition and tonal values to ensure a perfect likeness.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-icon">3</div>
+                        <div>
+                            <h5>Color Layers</h5>
+                            <p class="text-muted">Building up the portrait through multiple sittings, focusing on the fine details of fur and expression.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-icon">4</div>
+                        <div>
+                            <h5>Drying & Shipping</h5>
+                            <p class="text-muted">Once finished, the painting needs time to dry before being varnished and safely packed for shipping.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="photo-req-box mb-5">
+                            <h4 class="mb-4 text-primary"><i class="fas fa-camera me-2"></i> Photo Requirements</h4>
+                            <ul class="list-unstyled small opacity-75">
+                                <li class="mb-3"><i class="fas fa-check-circle me-2 text-success"></i> High resolution (Smartphone photos are usually fine)</li>
+                                <li class="mb-3"><i class="fas fa-check-circle me-2 text-success"></i> Natural lighting (Outdoor or near a window)</li>
+                                <li class="mb-3"><i class="fas fa-check-circle me-2 text-success"></i> Eye level with your pet</li>
+                                <li class="mb-3"><i class="fas fa-times-circle me-2 text-danger"></i> No blurry or dark photos</li>
+                            </ul>
+                        </div>
+
+                        <div class="card p-4 border-0 shadow-sm bg-light">
+                            <h4 class="mb-4">Starting From $180</h4>
+                            <p class="small text-muted mb-4">Includes high-quality canvas, professional oils, and worldwide shipping.</p>
+                            <a href="contact.html" class="btn-pawtrait btn-primary w-100">Start Your Commission</a>
+                            <p class="text-center mt-3 small opacity-50">Slots are limited. Secure yours today.</p>
+                        </div>
+
+                        <div class="mt-5">
+                            <h5 class="mb-3">Related Services</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-muted"><i class="fas fa-arrow-right me-2 text-primary small"></i> Digital Pet Portraits</a></li>
+                                <li class="mb-2"><a href="#" class="text-muted"><i class="fas fa-arrow-right me-2 text-primary small"></i> Multi-Pet Commissions</a></li>
+                                <li class="mb-2"><a href="#" class="text-muted"><i class="fas fa-arrow-right me-2 text-primary small"></i> Custom Backgrounds</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="logo mb-4"><i class="fas fa-paw me-2 text-primary"></i>Pawtrait.</a>
+                    <p class="text-light opacity-75">Premium pet portraits by Elena Vasquez. Capturing the spirit of your companions since 2018.</p>
+                    <div class="d-flex gap-3 fs-5 mt-4 social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="p-0 opacity-75">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="p-0 opacity-75">
+                        <li class="mb-2">Oil Portraits</li>
+                        <li class="mb-2">Digital Illustrations</li>
+                        <li class="mb-2">Rush Commissions</li>
+                        <li class="mb-2">Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-3">Get tips on pet photography and exclusive discounts.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control bg-transparent text-white border-secondary" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-50 copyright-bar">
+                <p class="mb-0">&copy; 2026 Pawtrait Elena Vasquez Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+

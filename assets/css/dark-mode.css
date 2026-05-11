@@ -1,0 +1,252 @@
+/*
+ * Pawtrait - Dark Mode Overrides
+ */
+
+body.dark-mode {
+    --bg-light: #121212;
+    --text-dark: #FFFFFF;
+    --text-muted: #D1D1D1;
+    --border-color: #333333;
+    --white: #1A1A1A;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+body.dark-mode header {
+    background: rgba(18, 18, 18, 0.95);
+}
+
+body.dark-mode .nav-links a {
+    color: var(--text-dark);
+}
+
+body.dark-mode .btn-outline {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+body.dark-mode .btn-outline:hover {
+    background-color: var(--primary-color);
+    color: #121212;
+}
+
+body.dark-mode .bg-light,
+body.dark-mode section.bg-light {
+    background-color: #1A1A1A !important;
+    color: var(--text-dark) !important;
+}
+
+body.dark-mode .text-muted {
+    color: var(--text-muted) !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .modal-content,
+body.dark-mode .dropdown-menu,
+body.dark-mode .accordion-item,
+body.dark-mode .step-card {
+    background-color: #1E1E1E;
+    border-color: #333;
+    color: var(--text-dark);
+}
+
+body.dark-mode .accordion-button {
+    background-color: #1E1E1E;
+    color: var(--text-dark);
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #252525;
+    color: var(--primary-color);
+}
+
+/* Hero Headings */
+body.dark-mode .hero h1,
+body.dark-mode .hero h2,
+body.dark-mode .hero .display-4,
+body.dark-mode .hero .display-5 {
+    color: #FFFFFF !important;
+}
+
+/* Card Box Shadows */
+body.dark-mode .card,
+body.dark-mode .step-card,
+body.dark-mode .pricing-card,
+body.dark-mode .commission-item {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Tables (Pricing & Services) */
+body.dark-mode .table {
+    color: #FFFFFF !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .table thead th {
+    background-color: #252525 !important;
+    color: var(--primary-color) !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .table td {
+    background-color: #1A1A1A !important;
+    color: #D1D1D1 !important;
+    border-color: #333 !important;
+}
+
+/* Icons & Hamburger */
+body.dark-mode .toggle-btn i,
+body.dark-mode .social-links a,
+body.dark-mode .contact-info i,
+body.dark-mode .revision-icons i,
+body.dark-mode .password-toggle i {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .menu-toggle span {
+    background-color: #FFFFFF !important;
+}
+
+body.dark-mode .toggle-btn {
+    color: #FFFFFF !important;
+}
+
+/* Form Controls */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #888 !important;
+}
+
+body.dark-mode .form-label {
+    color: #FFFFFF !important;
+}
+
+/* Blog Specifics */
+body.dark-mode .nav-tabs {
+    border-color: #333 !important;
+}
+
+body.dark-mode .nav-tabs .nav-link {
+    color: #D1D1D1 !important;
+}
+
+body.dark-mode .nav-tabs .nav-link.active {
+    background-color: #252525 !important;
+    border-color: #333 !important;
+    color: var(--primary-color) !important;
+}
+
+body.dark-mode .btn-outline-dark {
+    border-color: #444 !important;
+    color: #D1D1D1 !important;
+}
+
+body.dark-mode .btn-outline-dark:hover,
+body.dark-mode .btn-dark {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .recent-post-img {
+    background: #252525 !important;
+    border-color: #444 !important;
+}
+
+/* Auth Pages (Login/Signup) */
+body.dark-mode .auth-wrapper {
+    background-color: #121212 !important;
+}
+
+body.dark-mode .auth-card {
+    background-color: #1A1A1A !important;
+    border-color: #333 !important;
+}
+
+/* Social Login Buttons */
+body.dark-mode .social-btn-circle {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .social-btn-circle.google i,
+body.dark-mode .social-btn-circle.facebook i,
+body.dark-mode .social-btn-circle.apple i {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .password-toggle {
+    color: #D1D1D1 !important;
+}
+
+/* Footer Visibility */
+body.dark-mode .site-footer {
+    background-color: #121212 !important;
+    color: #D1D1D1 !important;
+}
+
+body.dark-mode .site-footer a {
+    color: #D1D1D1 !important;
+}
+
+body.dark-mode .site-footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+body.dark-mode .site-footer h5,
+body.dark-mode .site-footer .logo {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .copyright-bar {
+    border-color: #333 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .payment-icons i {
+    color: #FFFFFF !important;
+    font-size: 32px;
+    margin-right: 15px;
+}
+
+/* Contact Page Specifics */
+body.dark-mode .contact-info-card {
+    background-color: #1E1E1E !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .social-connect a {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .social-connect a:hover {
+    color: #FFFFFF !important;
+    background-color: var(--primary-color) !important;
+}
+
+body.dark-mode .response-notice {
+    background-color: #252525 !important;
+    border-color: var(--primary-color) !important;
+    color: #D1D1D1 !important;
+}
+
+body.dark-mode .bg-white.p-5.border.rounded.shadow-sm {
+    background-color: #1E1E1E !important;
+    border-color: #333 !important;
+}
+
+/* Headings Visibility */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #FFFFFF !important;
+}

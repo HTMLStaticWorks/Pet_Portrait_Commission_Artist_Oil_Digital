@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Elena Vasquez Studio - Commission Options</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <style>
+        .page-header {
+            padding: 160px 0 80px;
+            background: var(--primary-color);
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #FFFFFF;
+        }
+
+        .page-header p {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            padding: 0;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .service-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        .comparison-table th {
+            background: var(--bg-light);
+            padding: 20px;
+        }
+
+        .comparison-table td {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-paw me-2 text-primary"></i>Pawtrait.</a>
+            <nav class="nav-links d-none d-lg-flex">
+                <a href="index.html" class="d-xl-none">Home 1</a><a href="home-2.html" class="d-xl-none">Home 2</a><div class="dropdown d-none d-xl-block"><a href="index.html">Home <i class="fas fa-chevron-down small ms-1"></i></a><div class="dropdown-menu"><a class="dropdown-item" href="index.html">Home 1</a><a class="dropdown-item" href="home-2.html">Home 2</a></div></div>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-toggles">
+                <button id="theme-toggle" class="toggle-btn" title="Toggle Dark Mode"><i
+                        class="fas fa-moon"></i></button>
+                <button id="rtl-toggle" class="toggle-btn" title="Toggle RTL"><i
+                        class="fas fa-arrows-left-right"></i></button>
+                <a href="login.html" class="btn-pawtrait btn-primary d-none d-md-inline-block">Signup</a>
+                <button class="menu-toggle d-lg-none toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-3 mb-3">Our Services</h1>
+            <p class="lead">Bespoke commissions tailored to your vision and companion's unique spirit.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Oil Portrait -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <img src="assets/images/service1.jpg" class="service-img" alt="Oil Portrait">
+                        <div class="p-4 text-center">
+                            <h3>Oil Portrait</h3>
+                            <p class="text-muted mb-4">Traditional hand-painted oils on professional canvas. Archival
+                                quality that lasts for generations.</p>
+                            <a href="service-details.html" class="btn-pawtrait btn-outline w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Digital Portrait -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <img src="assets/images/service2.jpg" class="service-img" alt="Digital Portrait">
+                        <div class="p-4 text-center">
+                            <h3>Digital Portrait</h3>
+                            <p class="text-muted mb-4">Modern digital illustrations with an artistic touch. Perfect for
+                                social media and custom prints.</p>
+                            <a href="service-details.html" class="btn-pawtrait btn-outline w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rush Commission -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <img src="assets/images/service3.jpg" class="service-img" alt="Rush Commission">
+                        <div class="p-4 text-center">
+                            <h3>Rush Commission</h3>
+                            <p class="text-muted mb-4">Need it fast for a birthday or memorial? Premium tier for
+                                prioritized scheduling and delivery.</p>
+                            <a href="contact.html" class="btn-pawtrait btn-outline w-100">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">Oil vs Digital</h2>
+                <p class="text-muted">Helping you decide which medium is right for you.</p>
+            </div>
+            <div class="table-responsive" data-aos="zoom-in">
+                <table class="table comparison-table bg-white">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Traditional Oil</th>
+                            <th>Digital Art</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Turnaround</td>
+                            <td>3-4 Weeks</td>
+                            <td>5-7 Days</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Revision Rounds</td>
+                            <td>1 Round (Minor)</td>
+                            <td>Unlimited Rounds</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Delivery Format</td>
+                            <td>Physical Canvas</td>
+                            <td>High-Res Digital File</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Framing</td>
+                            <td>Optional (Extra)</td>
+                            <td>DIY / Print Service</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Longevity</td>
+                            <td>Archival (100+ years)</td>
+                            <td>Infinite (Digital)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5">Client Love</h2>
+                <p class="text-muted">What pet parents are saying about their Pawtrait commissions.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="p-5 border rounded bg-white shadow-sm text-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" class="testimonial-avatar" alt="Sarah J.">
+                        <div class="text-primary mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="font-italic mb-4">"Elena captured Max's soulful eyes perfectly. It's now the centerpiece of our home. Truly remarkable work that we will always cherish."</p>
+                        <div>
+                            <div class="fw-bold">Sarah J.</div>
+                            <div class="small text-muted">Oil Portrait</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-5 border rounded bg-white shadow-sm text-center">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop" class="testimonial-avatar" alt="Mark D.">
+                        <div class="text-primary mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="font-italic mb-4">"The digital portrait was done so quickly and the quality is amazing. I've printed it large and it looks just like a painting!"</p>
+                        <div>
+                            <div class="fw-bold">Mark D.</div>
+                            <div class="small text-muted">Digital Art</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-5 border rounded bg-white shadow-sm text-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop" class="testimonial-avatar" alt="Emily R.">
+                        <div class="text-primary mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="font-italic mb-4">"I needed a last-minute gift and the rush service was a lifesaver. Elena was so helpful and the result was absolutely beautiful art."</p>
+                        <div>
+                            <div class="fw-bold">Emily R.</div>
+                            <div class="small text-muted">Rush Order</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Teaser -->
+    <section class="section-padding text-center">
+        <div class="container">
+            <h3 class="mb-4">Still have questions?</h3>
+            <p class="mb-5 text-muted">Visit our FAQ page or send us a message for a custom quote.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="contact.html" class="btn-pawtrait btn-primary">Contact Us</a>
+                <a href="index.html#faqAccordion" class="btn-pawtrait btn-outline">Read FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="logo mb-4"><i class="fas fa-paw me-2 text-primary"></i>Pawtrait.</a>
+                    <p class="text-muted opacity-75">Premium pet portraits by Elena Vasquez. Capturing the spirit of
+                        your companions since 2018.</p>
+                    <div class="d-flex gap-3 fs-5 mt-4 social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4 fw-bold">Quick Links</h5>
+                    <ul class="p-0 opacity-75">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4 fw-bold">Services</h5>
+                    <ul class="p-0 opacity-75">
+                        <li class="mb-2">Oil Portraits</li>
+                        <li class="mb-2">Digital Illustrations</li>
+                        <li class="mb-2">Rush Commissions</li>
+                        <li class="mb-2">Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4 fw-bold">Newsletter</h5>
+                    <p class="text-muted opacity-75 mb-3">Get tips on pet photography and exclusive discounts.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control bg-transparent border-secondary"
+                            placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center opacity-50 copyright-bar">
+                <p class="mb-0">&copy; 2026 Pawtrait Elena Vasquez Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+

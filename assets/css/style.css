@@ -5,8 +5,9 @@
 
 :root {
     /* Color Palette */
-    --primary-color: #C5A059;
-    /* Gold */
+    --primary-color: #0D6EFD;
+    --primary-hover: #0b5ed7;
+    /* Blue */
     --secondary-color: #0E3B43;
     /* Deep Teal */
     --accent-color: #A0522D;
@@ -124,7 +125,7 @@ section, .section-padding {
 }
 
 .btn-primary:hover {
-    background-color: var(--text-dark);
+    background-color: var(--primary-hover);
     color: var(--white);
 }
 
@@ -140,7 +141,8 @@ section, .section-padding {
 }
 
 .btn-outline:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
     color: var(--white);
 }
 
@@ -175,7 +177,7 @@ header {
 }
 
 .logo i {
-    color: #3498db;
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -353,7 +355,7 @@ body.dark-mode .toggle-btn {
 }
 
 #scroll-top:hover {
-    background: var(--text-dark);
+    background: var(--primary-hover);
     transform: translateY(-5px);
 }
 
@@ -371,7 +373,7 @@ body.dark-mode .accordion-button:not(.collapsed) {
 }
 
 body.dark-mode .logo i {
-    color: #3498db !important;
+    color: var(--primary-color) !important;
 }
 
 body.dark-mode .logo {
@@ -409,7 +411,7 @@ body.dark-mode .site-footer .social-links a {
 }
 
 .site-footer .social-links a:hover {
-    background: var(--primary-color);
+    background: var(--primary-hover);
     color: white;
     transform: rotate(360deg);
 }

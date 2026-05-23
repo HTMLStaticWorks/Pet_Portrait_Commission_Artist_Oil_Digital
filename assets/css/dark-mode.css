@@ -26,8 +26,9 @@ body.dark-mode .btn-outline {
 }
 
 body.dark-mode .btn-outline:hover {
-    background-color: var(--primary-color);
-    color: #121212;
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: #FFFFFF;
 }
 
 body.dark-mode .bg-light,
@@ -147,7 +148,12 @@ body.dark-mode .btn-outline-dark {
     color: #D1D1D1 !important;
 }
 
-body.dark-mode .btn-outline-dark:hover,
+body.dark-mode .btn-outline-dark:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+    color: #FFFFFF !important;
+}
+
 body.dark-mode .btn-dark {
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
@@ -227,7 +233,7 @@ body.dark-mode .social-connect a {
 
 body.dark-mode .social-connect a:hover {
     color: #FFFFFF !important;
-    background-color: var(--primary-color) !important;
+    background-color: var(--primary-hover) !important;
 }
 
 body.dark-mode .response-notice {

@@ -43,6 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const currentDir = document.documentElement.getAttribute('dir');
             const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
             document.documentElement.setAttribute('dir', newDir);
+            if (newDir === 'rtl') {
+                document.documentElement.setAttribute('lang', 'ar');
+            } else {
+                document.documentElement.setAttribute('lang', 'en');
+            }
             localStorage.setItem('dir', newDir);
         });
     });
@@ -51,6 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedDir = localStorage.getItem('dir');
     if (savedDir) {
         document.documentElement.setAttribute('dir', savedDir);
+        if (savedDir === 'rtl') {
+            document.documentElement.setAttribute('lang', 'ar');
+        }
     }
 
     // 3. Mobile Menu Toggle
